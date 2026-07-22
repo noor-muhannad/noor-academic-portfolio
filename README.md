@@ -1,51 +1,22 @@
-# Noor Academic Portfolio
+# Noor Brand V2 — GitHub Ready
 
-Multi-page bilingual academic portfolio for Noor Muhannad Ahmed.
+This package is intentionally flat and simple.
 
-## Pages
-- Home
-- Publications
-- Projects
-- Certificates
-- Conferences
-- Contact
+## Upload
+1. Extract the ZIP.
+2. Select every file inside the extracted folder.
+3. Drag all files directly into the root of your GitHub repository.
+4. Commit changes.
 
-## Confirmed details
-- GitHub: https://github.com/noor-muhannad
-- University email: NoorMuhannad.sec@student.uobabylon.edu.iq
-- Phone: +964 771 867 2592
-- WhatsApp: https://wa.me/9647718672592
+No folders are required.
 
-## GitHub Pages
-Create a public repository named `noor-academic-portfolio`, upload all files, then enable Pages from the `main` branch and root folder.
-
-Expected URL:
-https://noor-muhannad.github.io/noor-academic-portfolio/
-
-## Certificates
-Certificate titles are already listed. Add verified certificate files to:
-`assets/certificates/`
-
-Then add download links to `certificates.html`.
-
-## CV
-Add your CV as `cv.pdf` in the project root when ready.
-
-## Motion design
-
-- Animated cyber-network canvas background
-- Soft cursor glow on desktop
-- Floating research-code badges
-- Shimmering logo
-- Animated headline accent
-- Interactive hover and tilt effects
-- Reduced-motion accessibility support
-
-## Brand logo
-
-The custom Noor Muhannad logo is integrated into the header, home hero, footer, and favicon.
-
-Files:
-- `assets/noor-logo.png`
-- `assets/noor-logo-cropped.png`
-- `assets/noor-monogram.png`
+Expected files:
+- index.html
+- styles.css
+- script.js
+- README.md
+- noor-logo.png
+- noor-logo-cropped.png
+- noor-monogram.png
+- iAIMS-2026-malware-drift-paper.pdf
+- IEEE-Membership-2026.pdf
