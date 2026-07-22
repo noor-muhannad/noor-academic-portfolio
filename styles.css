@@ -173,3 +173,13 @@ filter:none
 .floating-code{width:44px;height:44px;font-size:10px}
 .code-a{left:2%}.code-b{right:0}.code-c{left:3%}
 }
+
+.brand-logo{display:flex;align-items:center;gap:12px}
+.brand-logo img{width:48px;height:48px;object-fit:contain;border-radius:14px;background:#fff;padding:3px;box-shadow:0 10px 28px rgba(7,26,51,.12)}
+.hero-brand-logo{width:min(560px,92%);height:auto;display:block;margin:0 0 24px;filter:drop-shadow(0 18px 35px rgba(7,26,51,.08));animation:logoReveal 1s ease both}
+@keyframes logoReveal{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.footer-logo{width:44px;height:44px;object-fit:contain;border-radius:12px;background:#fff;padding:3px;box-shadow:0 8px 22px rgba(7,26,51,.1);margin-right:14px}
+footer{position:relative}
+html[data-theme="dark"] .brand-logo img,html[data-theme="dark"] .footer-logo{background:#fff}
+@media(max-width:900px){.hero-brand-logo{margin-inline:auto}}
+@media(max-width:600px){.brand-logo img{width:42px;height:42px}.brand-logo span{display:none}.hero-brand-logo{width:100%;margin-bottom:18px}.footer-logo{margin:0 auto 8px}}

@@ -40,3 +40,12 @@ Add your CV as `cv.pdf` in the project root when ready.
 - Animated headline accent
 - Interactive hover and tilt effects
 - Reduced-motion accessibility support
+
+## Brand logo
+
+The custom Noor Muhannad logo is integrated into the header, home hero, footer, and favicon.
+
+Files:
+- `assets/noor-logo.png`
+- `assets/noor-logo-cropped.png`
+- `assets/noor-monogram.png`
