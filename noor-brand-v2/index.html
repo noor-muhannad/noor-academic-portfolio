@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Noor Muhannad Ahmed — AI & Cybersecurity Researcher, TPC Reviewer, IEEE Member, and Author.">
+  <meta name="theme-color" content="#071a33">
+  <meta property="og:title" content="Noor Muhannad Ahmed | AI & Cybersecurity Researcher">
+  <meta property="og:description" content="Research, publications, projects, certificates, and professional profile.">
+  <meta property="og:type" content="website">
+  <title>Noor Muhannad Ahmed | Academic Portfolio</title>
+  <link rel="icon" href="assets/noor-monogram.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="intro-screen" id="introScreen">
+    <img src="assets/noor-monogram.png" alt="NM logo">
+    <span></span>
+  </div>
+  <canvas id="networkCanvas" aria-hidden="true"></canvas>
+  <div id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <img src="assets/noor-monogram.png" alt="Noor Muhannad logo">
+      <span>Noor Muhannad</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about" data-en="About" data-ar="نبذة">About</a>
+      <a href="#research" data-en="Research" data-ar="الأبحاث">Research</a>
+      <a href="#lab" data-en="Research Lab" data-ar="مختبر الأبحاث">Research Lab</a>
+      <a href="#credentials" data-en="Credentials" data-ar="الاعتمادات">Credentials</a>
+      <a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="round-btn" aria-label="Toggle theme">☾</button>
+      <button id="langToggle" class="lang-btn">العربية</button>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span><b data-en="Open to research collaboration" data-ar="متاحة للتعاون البحثي">Open to research collaboration</b></div>
+        <img class="hero-logo" src="assets/noor-logo-cropped.png" alt="Noor Muhannad logo">
+        <p class="role" data-en="AI & Cybersecurity Researcher | TPC Reviewer | IEEE Member | Author" data-ar="باحثة في الذكاء الاصطناعي والأمن السيبراني | مراجعة TPC | عضو IEEE | مؤلفة">
+          AI & Cybersecurity Researcher | TPC Reviewer | IEEE Member | Author
+        </p>
+        <h1 data-en="Building intelligent defenses for a <em>safer digital future.</em>" data-ar="أبني دفاعات ذكية من أجل <em>مستقبل رقمي أكثر أماناً.</em>">
+          Building intelligent defenses for a <em>safer digital future.</em>
+        </h1>
+        <p class="lead" data-en="Independent researcher specializing in AI-powered malware detection, ransomware analysis, concept drift, digital forensics, and secure software development." data-ar="باحثة مستقلة متخصصة في كشف البرمجيات الخبيثة بالذكاء الاصطناعي، وتحليل برمجيات الفدية، والانجراف المفاهيمي، والأدلة الجنائية الرقمية، وتطوير البرمجيات الآمنة.">
+          Independent researcher specializing in AI-powered malware detection, ransomware analysis, concept drift, digital forensics, and secure software development.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#research" data-en="Explore Research" data-ar="استعرض الأبحاث">Explore Research</a>
+          <a class="btn secondary" href="cv.pdf" download data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</a>
+        </div>
+        <div class="profile-links">
+          <a href="https://github.com/noor-muhannad" target="_blank">GitHub</a>
+          <a href="https://orcid.org/0009-0005-8126-2452" target="_blank">ORCID</a>
+          <a href="mailto:NoorMuhannad.sec@student.uobabylon.edu.iq">University Email</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="research-orbit">
+          <div class="orbit ring-one"></div>
+          <div class="orbit ring-two"></div>
+          <div class="orbit ring-three"></div>
+          <div class="orbit-core">
+            <img src="assets/noor-monogram.png" alt="NM">
+            <small>RESEARCH • SECURITY • AI</small>
+          </div>
+          <div class="orbit-chip chip-one">DistilBERT</div>
+          <div class="orbit-chip chip-two">CNN</div>
+          <div class="orbit-chip chip-three">BODMAS</div>
+          <div class="orbit-chip chip-four">Drift</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics section reveal">
+      <article><strong data-count="3">0</strong><span data-en="Research Papers" data-ar="أبحاث علمية">Research Papers</span></article>
+      <article><strong data-count="12">0</strong><span data-en="Projects & Systems" data-ar="مشاريع وأنظمة">Projects & Systems</span></article>
+      <article><strong data-count="3">0</strong><span data-en="International Conference Tracks" data-ar="مسارات مؤتمرات دولية">International Conference Tracks</span></article>
+      <article><strong>IEEE</strong><span data-en="Professional Member" data-ar="عضو مهني">Professional Member</span></article>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <p class="kicker" data-en="Professional Identity" data-ar="الهوية المهنية">Professional Identity</p>
+        <h2 data-en="Research with purpose.<br>Security with intelligence." data-ar="بحثٌ له هدف.<br>وأمنٌ تقوده المعرفة.">
+          Research with purpose.<br>Security with intelligence.
+        </h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="intro" data-en="I am Noor Muhannad Ahmed, an AI & Cybersecurity Researcher focused on developing intelligent, practical, explainable, and reproducible solutions for modern cyber threats." data-ar="أنا نور مهند أحمد، باحثة في الذكاء الاصطناعي والأمن السيبراني أركز على تطوير حلول ذكية وعملية وقابلة للتفسير والتكرار للتهديدات السيبرانية الحديثة.">
+            I am Noor Muhannad Ahmed, an AI & Cybersecurity Researcher focused on developing intelligent, practical, explainable, and reproducible solutions for modern cyber threats.
+          </p>
+          <p data-en="My work combines deep learning, NLP, temporal analysis, malware feature engineering, and digital forensics to study ransomware, malware families, concept drift, and secure software systems." data-ar="يجمع عملي بين التعلم العميق ومعالجة اللغة والتحليل الزمني وهندسة خصائص البرمجيات الخبيثة والأدلة الجنائية الرقمية لدراسة برمجيات الفدية وعائلات البرمجيات الخبيثة والانجراف المفاهيمي والأنظمة الآمنة.">
+            My work combines deep learning, NLP, temporal analysis, malware feature engineering, and digital forensics to study ransomware, malware families, concept drift, and secure software systems.
+          </p>
+        </div>
+        <aside class="identity-card reveal">
+          <div><span data-en="Primary Field" data-ar="المجال الأساسي">Primary Field</span><strong data-en="AI-Powered Cybersecurity" data-ar="الأمن السيبراني المدعوم بالذكاء الاصطناعي">AI-Powered Cybersecurity</strong></div>
+          <div><span data-en="Research Focus" data-ar="التركيز البحثي">Research Focus</span><strong data-en="Malware, Ransomware, Drift" data-ar="البرمجيات الخبيثة والفدية والانجراف">Malware, Ransomware, Drift</strong></div>
+          <div><span data-en="Professional Roles" data-ar="الأدوار المهنية">Professional Roles</span><strong data-en="Researcher, Reviewer, Author" data-ar="باحثة، مراجعة، مؤلفة">Researcher, Reviewer, Author</strong></div>
+          <div><span data-en="Affiliation" data-ar="الانتماء">Affiliation</span><strong data-en="IEEE Iraq Section" data-ar="قسم العراق في IEEE">IEEE Iraq Section</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research section" id="research">
+      <div class="section-heading reveal">
+        <p class="kicker" data-en="Featured Research" data-ar="أبحاث مختارة">Featured Research</p>
+        <h2 data-en="Three directions.<br>One focused research identity." data-ar="ثلاثة اتجاهات.<br>وهوية بحثية متخصصة واحدة.">
+          Three directions.<br>One focused research identity.
+        </h2>
+      </div>
+
+      <div class="research-grid">
+        <article class="research-card featured reveal">
+          <div class="card-head"><span class="status accepted" data-en="Accepted" data-ar="مقبول">Accepted</span><span>01</span></div>
+          <h3>Ransomware Detection Using AI Empowered Techniques</h3>
+          <p class="subtitle">A Hybrid CNN and DistilBERT Framework</p>
+          <p data-en="A hybrid deep learning system combining numerical PE features processed by a 1D-CNN with textualized representations processed by DistilBERT." data-ar="نظام تعلم عميق هجين يجمع خصائص ملفات PE العددية المعالجة بواسطة 1D-CNN مع تمثيلات نصية تعالج بواسطة DistilBERT.">
+            A hybrid deep learning system combining numerical PE features processed by a 1D-CNN with textualized representations processed by DistilBERT.
+          </p>
+          <div class="tags"><span>Ransomware</span><span>DistilBERT</span><span>1D-CNN</span><span>PE Features</span></div>
+          <p class="venue">FiCloud 2026 · Granada, Spain · Oral Presentation</p>
+        </article>
+
+        <article class="research-card reveal">
+          <div class="card-head"><span class="status review" data-en="Under Review" data-ar="قيد المراجعة">Under Review</span><span>02</span></div>
+          <h3>A Two-Stage Hybrid DistilBERT–CNN Framework</h3>
+          <p class="subtitle">Malware Detection & Multi-Class Categorization</p>
+          <p data-en="A two-stage pipeline that first detects malware and then classifies malicious samples into multiple categories using the BODMAS dataset." data-ar="مسار ثنائي المراحل يكتشف البرمجيات الخبيثة أولاً ثم يصنف العينات الضارة إلى فئات متعددة باستخدام مجموعة بيانات BODMAS.">
+            A two-stage pipeline that first detects malware and then classifies malicious samples into multiple categories using the BODMAS dataset.
+          </p>
+          <div class="tags"><span>BODMAS</span><span>Malware</span><span>Classification</span><span>NLP</span></div>
+          <p class="venue">International Conference Submission · Abu Dhabi</p>
+        </article>
+
+        <article class="research-card reveal">
+          <div class="card-head"><span class="status prepared" data-en="Prepared for iAIMS 2026" data-ar="معدّ لـ iAIMS 2026">Prepared for iAIMS 2026</span><span>03</span></div>
+          <h3>Malware Families as Dynamical Systems</h3>
+          <p class="subtitle">Why Drift Detection Outperforms Feature-Space Forecasting</p>
+          <p data-en="Models malware families as temporal trajectories and shows that drift-jump anomaly detection is more actionable than short-horizon forecasting." data-ar="يعامل عائلات البرمجيات الخبيثة كمسارات زمنية ويبيّن أن كشف قفزات الانجراف أكثر فائدة من التنبؤ قصير المدى.">
+            Models malware families as temporal trajectories and shows that drift-jump anomaly detection is more actionable than short-horizon forecasting.
+          </p>
+          <div class="tags"><span>Concept Drift</span><span>GRU</span><span>Kalman</span><span>Dynamical Systems</span></div>
+          <div class="card-actions"><a href="assets/papers/iAIMS-2026-malware-drift-paper.pdf" target="_blank" data-en="Open Paper" data-ar="فتح البحث">Open Paper</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab section" id="lab">
+      <div class="section-heading reveal">
+        <p class="kicker" data-en="Research Lab" data-ar="مختبر الأبحاث">Research Lab</p>
+        <h2 data-en="Systems, prototypes, and applied security tools." data-ar="أنظمة ونماذج أولية وأدوات أمنية تطبيقية.">
+          Systems, prototypes, and applied security tools.
+        </h2>
+      </div>
+
+      <div class="lab-grid">
+        <article class="lab-card reveal"><span>01</span><h3>Hybrid Ransomware Detection System</h3><p>DistilBERT · 1D-CNN · PE Features · Python</p></article>
+        <article class="lab-card reveal"><span>02</span><h3>BODMAS Two-Stage Malware Framework</h3><p>Multi-Class Classification · NLP · CNN</p></article>
+        <article class="lab-card reveal"><span>03</span><h3>Malware Drift Early-Warning System</h3><p>PCA · GRU · Kalman Filter · MAD</p></article>
+        <article class="lab-card reveal"><span>04</span><h3>SOC Alert Prioritization Engine</h3><p>Threat Scoring · Automation · Reporting</p></article>
+        <article class="lab-card reveal"><span>05</span><h3>Threat Assessment Engine</h3><p>Risk Analysis · Rules · Python</p></article>
+        <article class="lab-card reveal"><span>06</span><h3>Response Recommendation Engine</h3><p>Incident Response · Containment · Automation</p></article>
+        <article class="lab-card reveal"><span>07</span><h3>Deepfake Image Analyzer</h3><p>OpenCV · NumPy · Tkinter</p></article>
+        <article class="lab-card reveal"><span>08</span><h3>Advanced Steganography Toolkit</h3><p>Image Security · OpenCV · Python</p></article>
+        <article class="lab-card reveal"><span>09</span><h3>IPv6 Security Scanning Lab</h3><p>Nmap · IPv6 · Ethical Hacking</p></article>
+      </div>
+    </section>
+
+    <section class="timeline section">
+      <div class="section-heading reveal">
+        <p class="kicker" data-en="Journey" data-ar="المسيرة">Journey</p>
+        <h2 data-en="A timeline of research, recognition, and growth." data-ar="مسيرة من البحث والتقدير والنمو.">
+          A timeline of research, recognition, and growth.
+        </h2>
+      </div>
+      <div class="timeline-line">
+        <article class="timeline-item reveal"><time>2023–2024</time><h3>Google Developer Student Clubs</h3><p data-en="Core Team Member." data-ar="عضو في الفريق الأساسي.">Core Team Member.</p></article>
+        <article class="timeline-item reveal"><time>2025</time><h3 data-en="AI-Cybersecurity Research Direction" data-ar="تحديد المسار البحثي">AI-Cybersecurity Research Direction</h3><p data-en="Focused research path in malware and ransomware detection." data-ar="مسار بحثي متخصص في كشف البرمجيات الخبيثة وبرمجيات الفدية.">Focused research path in malware and ransomware detection.</p></article>
+        <article class="timeline-item reveal"><time>2026</time><h3 data-en="International Research Acceptance" data-ar="قبول بحث دولي">International Research Acceptance</h3><p>FiCloud 2026 · Granada, Spain</p></article>
+        <article class="timeline-item reveal"><time>2026</time><h3>IEEE Member</h3><p data-en="IEEE Iraq Section, valid through 31/12/2026." data-ar="قسم العراق في IEEE، صالحة حتى 31/12/2026.">IEEE Iraq Section, valid through 31/12/2026.</p></article>
+        <article class="timeline-item reveal"><time>2026</time><h3>Technical Program Committee Reviewer</h3><p data-en="Contributing to peer review and technical quality assessment." data-ar="المساهمة في مراجعة الأبحاث وتقييم الجودة التقنية.">Contributing to peer review and technical quality assessment.</p></article>
+      </div>
+    </section>
+
+    <section class="credentials section" id="credentials">
+      <div class="section-heading reveal">
+        <p class="kicker" data-en="Credentials & Recognition" data-ar="الاعتمادات والتقدير">Credentials & Recognition</p>
+        <h2 data-en="Memberships, certificates, and professional recognition." data-ar="عضويات وشهادات وتقدير مهني.">
+          Memberships, certificates, and professional recognition.
+        </h2>
+      </div>
+
+      <div class="credential-grid">
+        <article class="credential-card reveal">
+          <div class="credential-icon">IEEE</div>
+          <h3>IEEE Member — Iraq Section</h3>
+          <p data-en="Professional membership valid through 31/12/2026." data-ar="عضوية مهنية صالحة حتى 31/12/2026.">Professional membership valid through 31/12/2026.</p>
+          <a href="assets/certificates/IEEE-Membership-2026.pdf" target="_blank" data-en="View Membership Card" data-ar="عرض بطاقة العضوية">View Membership Card</a>
+        </article>
+        <article class="credential-card reveal"><div class="credential-icon">H</div><h3>HarvardX — CS50’s Introduction to Cybersecurity</h3><p data-en="Cybersecurity foundations, privacy, systems, and defensive thinking." data-ar="أساسيات الأمن السيبراني والخصوصية والأنظمة والتفكير الدفاعي.">Cybersecurity foundations, privacy, systems, and defensive thinking.</p></article>
+        <article class="credential-card reveal"><div class="credential-icon">C</div><h3>Cisco Networking Academy — Introduction to Cybersecurity</h3><p data-en="Core cybersecurity concepts, online safety, and attack surfaces." data-ar="مفاهيم الأمن السيبراني الأساسية والسلامة على الإنترنت وأسطح الهجوم.">Core cybersecurity concepts, online safety, and attack surfaces.</p></article>
+        <article class="credential-card reveal"><div class="credential-icon">E</div><h3>Edraak — Cybersecurity Specialization</h3><p data-en="Structured learning in cybersecurity principles and applied awareness." data-ar="تعلم منظم في مبادئ الأمن السيبراني والوعي التطبيقي.">Structured learning in cybersecurity principles and applied awareness.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <p class="kicker light" data-en="Let’s Connect" data-ar="لنتواصل">Let’s Connect</p>
+          <h2 data-en="Research collaboration, academic opportunities, and cybersecurity roles." data-ar="تعاون بحثي وفرص أكاديمية ووظائف في الأمن السيبراني.">
+            Research collaboration, academic opportunities, and cybersecurity roles.
+          </h2>
+          <div class="contact-links">
+            <a href="mailto:NoorMuhannad.sec@student.uobabylon.edu.iq"><span>🎓</span><div><small>University Email</small><strong>NoorMuhannad.sec@student.uobabylon.edu.iq</strong></div></a>
+            <a href="tel:+9647718672592"><span>☎</span><div><small data-en="Phone" data-ar="الهاتف">Phone</small><strong dir="ltr">+964 771 867 2592</strong></div></a>
+            <a href="https://github.com/noor-muhannad" target="_blank"><span>⌘</span><div><small>GitHub</small><strong>@noor-muhannad</strong></div></a>
+            <a href="https://orcid.org/0009-0005-8126-2452" target="_blank"><span>◈</span><div><small>ORCID</small><strong>0009-0005-8126-2452</strong></div></a>
+          </div>
+        </div>
+        <div class="qr-panel">
+          <img src="assets/noor-monogram.png" alt="NM logo">
+          <div id="qrcode"></div>
+          <strong data-en="Scan to open portfolio" data-ar="امسح لفتح الموقع">Scan to open portfolio</strong>
+          <small>noor-muhannad.github.io/noor-academic-portfolio</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/noor-monogram.png" alt="NM">
+    <div><strong>Noor Muhannad Ahmed</strong><span>AI & Cybersecurity Researcher</span></div>
+    <p>© <span id="year"></span> Noor Muhannad Ahmed</p>
+    <p class="dragon">By Dragon🔥</p>
+  </footer>
+</body>
+</html>
